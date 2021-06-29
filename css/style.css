@@ -44,8 +44,12 @@ header {
 }
 
 .nav__links li {
+    padding-left: 20px;
     display: inline-block;
-    padding: 0px 20px;
+}
+
+.nav__links li:last-child {
+    padding-right: 20px;
 }
 
 .nav__links li a {
@@ -53,8 +57,9 @@ header {
 }
 
 .nav__links li a:hover {
-    color: #F76426;
-    background-color: #ffffff;
+    /* tbc */
+    /* color: #F76426;
+    background-color: #ffffff; */
 }
 
 .navbar-button {
@@ -70,7 +75,7 @@ header {
 
 .navbar-button:hover {
     /* TO DO */
-    border: 1px solid #ffffff;
+    /* border: 1px solid #ffffff;
     color: #ffffff;
-    background-color: #F76426;
+    background-color: #F76426; */
 }
