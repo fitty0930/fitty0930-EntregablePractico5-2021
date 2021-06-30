@@ -8,11 +8,10 @@ body {
     margin: 0;
     font-family: 'Lato';
     background-color: #f5f5f5;
+    
 }
 
-header li,
-a,
-.navbar-button {
+nav li a {
     font-size: 14px;
     text-decoration: none;
 }
@@ -71,4 +70,48 @@ header {
     border: 1px solid #ffffff;
     color: #ffffff;
     background-color: #F76426;
+}
+
+.search{
+    width: 100%;
+    height: 85vh;
+    background-image: url("../img/unknown.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.search .col-md-6{
+    margin-left: auto;
+    margin-right: auto;
+}
+.div_input_search, .div_btn_publicar{
+    margin-top: 5%;
+}
+.div_btn_publicar button{
+    /* Publica tu habitación */
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center; 
+    border: 2px solid #F76426;
+
+    color: #F76426;
+}
+
+.div_btn_publicar button:hover{
+    color: white;
+    background-color: #F76426;
+}
+.div_title{
+    margin-top: 20%;
+}
+.div_input_search button{
+    background-color: #F76426;
+    color: white;
+}
+footer{
+    
 }
