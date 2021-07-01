@@ -131,6 +131,9 @@ header {
     text-align: center;
     margin-top: 1%;
 }
+.cards_simple{
+    margin-left: 5%;
+}
 .cards_dobles{
     margin-left: 15%;
     padding-top: 5%;
@@ -138,6 +141,10 @@ header {
 .card_Completa{
     margin-left: 30%;
     padding-top: 5%;
+}
+.div_likes{
+    display: inline-block;
+    list-style: none;
 }
 
 /* FOOTER  */
