@@ -11,9 +11,9 @@ body {
     
 }
 
-nav li a {
+a {
     font-size: 14px;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 header li,
@@ -26,7 +26,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 30px 2%;
-    width: 100vw;
+    width: 100%;
     height: 100px;
     background-color: #F76426;
 }
@@ -73,7 +73,6 @@ header {
 }
 
 .search{
-    width: 100%;
     height: 85vh;
     background-image: url("../img/unknown.png");
     background-repeat: no-repeat;
@@ -112,6 +111,64 @@ header {
     background-color: #F76426;
     color: white;
 }
+/* CONTENIDO */
+.img_ilustracion{
+    width: 60%;
+    height: 90vh;
+    margin-left: 20%;
+    margin-top: 2.5%;
+}
+
+.div_opiniones{
+    border: 1px solid black;
+    margin-bottom: 3%;
+}
+.div_opiniones p{
+    text-align: center;
+    margin-top: 0.5%;
+}
+.title_intermedio{
+    text-align: center;
+    margin-top: 1%;
+}
+.cards_dobles{
+    margin-left: 15%;
+    padding-top: 5%;
+}
+.card_Completa{
+    margin-left: 30%;
+    padding-top: 5%;
+}
+
+/* FOOTER  */
 footer{
-    
+    background-color: #F26D34;
+}
+.footer__links{
+    list-style: none;
+}
+.footer__links div{
+    border-bottom: 1px solid white;
+    padding-top: 1%;
+}
+
+.footer__links div p{
+    margin-left: 38%;
+    color: white;
+}
+
+.footer__links li {
+    display: inline-block;
+    padding: 0px 20px;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+.links_redesSociales{
+    list-style: none;
+    margin-left: 60%;
+}
+footer p{
+    margin-left: 40%;
+    color: white;
+    padding-bottom: 1%;
 }
