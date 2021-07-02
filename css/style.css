@@ -180,6 +180,12 @@ header {
     height: 80%;
     width: 50%;
 }
+.btn_redondo{
+    border-radius: 20px !important;
+}
+.div_valoracion{
+    float: right;
+}
 /* FOOTER  */
 footer{
     background-color: #F26D34;
