@@ -134,6 +134,9 @@ header {
 .cards_simple{
     margin-left: 5%;
 }
+.cards_simple img{
+    height: 200px;
+}
 .cards_dobles{
     margin-left: 15%;
     padding-top: 5%;
@@ -141,12 +144,42 @@ header {
 .card_Completa{
     margin-left: 30%;
     padding-top: 5%;
+    margin-bottom: 5%;
+    /* height: 70%; */
 }
 .div_likes{
+    align-content: flex-start;
+}
+.div_likes img{
+    width: 20px;
+
+}
+.img_person_card{
+    width: 10%;
+    height: 10%;
+}
+.div_imgCard_doble img{
     display: inline-block;
-    list-style: none;
+    width: 45%;
+    margin-left: 2.5%;
+}
+.div_imgCard_completa img{
+    display: inline-block;
+    width: 18%;
+    margin-left: 0.5%;
+}
+.card_horizontal_container{
+    display: inline-flex;
 }
 
+.card_horizontal{
+    margin-left: 30%;
+    height: 80%;
+}
+.card_horizontal_container img{
+    height: 80%;
+    width: 50%;
+}
 /* FOOTER  */
 footer{
     background-color: #F26D34;
