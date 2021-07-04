@@ -124,6 +124,17 @@ header {
     border-radius: 10px;
     transition: 0.25px;
     cursor: pointer;
+    box-shadow: 0 2px rgb(70, 69, 69);
+}
+
+.login-box .btn-ingresar:hover {
+    background-color: #ff4d00
+}
+
+.login-box .btn-ingresar:active {
+    background-color: rgb(190, 90, 43);
+    box-shadow: 0 2px rgb(70, 69, 69);
+    transform: translateY(4px);
 }
 
 .login-box #username-alert,
