@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Navbar </title>
+    <title> Login </title>
     <link rel="stylesheet" href="css/style.css">
 
     <!-- ESTO ES NECESARIO PARA PODER USAR NUESTRO TIPO DE LETRA -->
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <!-- NAVBAR HOME -->
+    <!-- NAVBAR LOGIN -->
     <header>
         <a class="logo" href="index.html"><img src="img/RoomShare.png" alt="logo" width="180px"></a>
         <nav>
@@ -25,27 +25,29 @@
         </nav>
         <a class="cta" href="login.html"><button class="navbar-button">Ingresar</button></a>
     </header>
-    <!-- RELLENO -->
-    <br>
-    <br>
-    <!-- TBC -->
-    <div>
 
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates possimus similique deserunt, incidunt atque suscipit vitae unde error libero expedita, voluptatibus, saepe rem hic ipsa perferendis quasi laboriosam nam asperiores.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque assumenda id sunt, fuga, non laborum numquam soluta earum quo quidem cumque expedita, perspiciatis dolore quis? Qui ipsum minus officia commodi.</p>
-    </div>
+    <section class="login">
+        <form class="login-box" action="" method="post" id="myForm">
+            <h1>¡Hola! Ingrese sus credenciales </h1>
 
-    <!-- TBC -->
-    <footer>
-
-    </footer>
-    <br>
-    <br>
+            <!-- IDENTIFICADOR -->
+            <span id="username-alert">  </span>
+            <input type="text" class="userinput" id="username">
+            <span class="id-floating-label" id="idlabel"> Ingrese su teléfono, email o usuario </span>
+            <!-- PASSWORD -->
+            <span id="password-alert">  </span>
+            <input type="password" id="password">
+            <span class="pw-floating-label" id="pwlabel"> Ingrese su contraseña </span>
 
 
+            <button class="btn-ingresar" id="login"> Ingresar </button>
+            <a href=""> He olvidado mi contraseña </a>
+            <!-- <button id="cancelar"> Volver atrás </button> -->
 
+        </form>
+    </section>
 
-    <script src="js/index.js"></script>
+    <script src="js/login.js"></script>
 </body>
 
 </html>
