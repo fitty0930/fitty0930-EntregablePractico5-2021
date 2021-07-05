@@ -17,3 +17,55 @@
     height: 12vh;   
     margin-right: 2%; 
 }
+.div_caracteristicas_lateral{
+    background-color: #C4C4C4;
+    width: 75%;
+}
+.description_lateral{
+    margin-left: 20%;
+}
+.div_que_incluye{
+    margin-left: 5%;
+    margin-top: 10%;
+    margin-bottom: 10px;
+}
+.div_que_incluye span{
+    margin-left: 7%;
+}
+.btn_consultar{
+    background-color: #F76426 !important;
+    margin-left: 35%;
+    margin-top: 5%;
+    border-radius: 15px;
+}
+.btn_consultar span{
+    color: white;
+}
+.div_descripcion{
+    margin-left: 16%;
+}
+.div_descripcion h4{
+    border-bottom: 1px solid red;
+}
+.div_descripcion h3 {
+    margin-left: 15%;
+    margin-top: 5%;
+}
+.div_descripcion span {
+    margin-left: 8%;
+}
+.div_comentarios{
+    margin-left: 16%;
+}
+.div_habitaciones_similares{
+   margin-left: 18%;
+   margin-bottom: 7%;
+   margin-top: 5%;
+}
+.div_habitaciones_similares img{
+    width: 20%;
+    height: 25%;   
+    margin-left: 3.5%; 
+    margin-right: 3.5%; 
+
+}
