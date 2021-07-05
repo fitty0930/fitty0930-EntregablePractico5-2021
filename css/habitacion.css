@@ -1,0 +1,19 @@
+.icons_favs{
+    float: right;
+}
+.img_central_carousel{
+    margin-left: 15%;
+    width: 80%;
+    height: 60vh;
+    margin-top: 5%;
+}
+.div_img_adicionales{
+    display: inline-block;
+    margin-top: 3%;
+    margin-left: 18%;
+}
+.div_img_adicionales img{
+    width: 15%;
+    height: 12vh;   
+    margin-right: 2%; 
+}

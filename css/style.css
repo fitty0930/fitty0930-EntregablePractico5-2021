@@ -87,15 +87,17 @@ header {
 }
 .div_btn_publicar button{
     /* Publica tu habitación */
+    height: 40px;
     font-family: Lato;
     font-style: normal;
     font-weight: 900;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 17px;
     display: flex;
     align-items: center;
     text-align: center; 
     border: 2px solid #F76426;
+    margin-top: 2%;
 
     color: #F76426;
 }
@@ -117,6 +119,7 @@ header {
     height: 90vh;
     margin-left: 20%;
     margin-top: 2.5%;
+    margin-bottom: 3%;
 }
 
 .div_opiniones{
@@ -132,20 +135,31 @@ header {
     margin-top: 1%;
 }
 .cards_simple{
-    margin-left: 5%;
+    margin-left: 8%;
+}
+.cards_simple .card{
+    width: 75%;
 }
 .cards_simple img{
     height: 200px;
 }
 .cards_dobles{
-    margin-left: 15%;
+    margin-left: 13%;
     padding-top: 5%;
 }
+.cards_dobles .card{
+    width: 80%;
+}
+
 .card_Completa{
-    margin-left: 30%;
+    margin-left: 20%;
     padding-top: 5%;
     margin-bottom: 5%;
     /* height: 70%; */
+    width: 60%;
+}
+.card_Completa .card{
+    width: 60%;
 }
 .div_likes{
     align-content: flex-start;
@@ -160,24 +174,27 @@ header {
 }
 .div_imgCard_doble img{
     display: inline-block;
-    width: 45%;
-    margin-left: 2.5%;
+    width: 48%;
+    margin-left: 1%;
 }
 .div_imgCard_completa img{
     display: inline-block;
-    width: 18%;
-    margin-left: 0.5%;
+    width: 19.5%;
+    margin-left: 0.05%;
+}
+.card-body a{
+    float: right;
 }
 .card_horizontal_container{
     display: inline-flex;
 }
 
 .card_horizontal{
-    margin-left: 30%;
-    height: 80%;
+    height: 200px ;
+    width: 60%;
 }
 .card_horizontal_container img{
-    height: 80%;
+    height: 56%;
     width: 50%;
 }
 .btn_redondo{
@@ -189,6 +206,7 @@ header {
 /* FOOTER  */
 footer{
     background-color: #F26D34;
+    width: 100%;
 }
 .footer__links{
     list-style: none;
