@@ -74,6 +74,8 @@ document.addEventListener("DOMContentLoaded", function() {
             if (username.value != USERNAME && username.value != TELEFONO && username.value != EMAIL) {
                 useralert.innerHTML = IDREFUSED
                 useralert.classList.remove(OCULTAR);
+                idlabel.style.display = "none";
+
             } else {
                 checkPassword();
             }
@@ -90,6 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (password.value != PASSWORD) {
             pwalert.innerHTML = PWREFUSED
             pwalert.classList.remove(OCULTAR);
+            pwlabel.style.display = "none";
         } else {
             idlabel.style.display = "none";
             pwlabel.style.display = "none";
