@@ -1,5 +1,7 @@
-.icons_favs{
+.icons_favs i{
     float: right;
+    font-size: 180%;
+    margin-left: 2%;
 }
 .img_central_carousel{
     margin-left: 15%;
@@ -20,6 +22,7 @@
 .div_caracteristicas_lateral{
     background-color: #C4C4C4;
     width: 75%;
+    margin-left: 25%;
 }
 .description_lateral{
     margin-left: 20%;
@@ -76,15 +79,17 @@
     width: 2%;
     height: 2%;
 }
-.div_habitaciones_similares{
-   margin-left: 18%;
-   margin-bottom: 7%;
-   margin-top: 5%;
+/* .cards_simple_similares{
+    margin-right: 5%;
+} */
+.cards_simple_similares .card{
+    width: 95%;
+    margin-top: 25%;
+    margin-bottom: 25%;
 }
-.div_habitaciones_similares img{
-    width: 20%;
-    height: 25%;   
-    margin-left: 3.5%; 
-    margin-right: 3.5%; 
-
+.cards_simple_similares img{
+    height: 200px;
+}
+.div_arrows i{
+    margin-top: 240px;
 }

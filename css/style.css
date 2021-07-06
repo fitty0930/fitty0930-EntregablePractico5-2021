@@ -203,6 +203,9 @@ header {
 .div_valoracion{
     float: right;
 }
+.arrowsCarousel{
+    font-size: 30px;
+}
 /* FOOTER  */
 footer{
     background-color: #F26D34;
