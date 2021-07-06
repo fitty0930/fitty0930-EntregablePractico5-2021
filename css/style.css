@@ -87,7 +87,7 @@ header {
     width: 500px;
     padding: 30px;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: white;
@@ -95,8 +95,8 @@ header {
     border-radius: 10px;
 }
 
-.login-box input[type="text"],
-.login-box input[type="password"] {
+#username,
+#password {
     border: 0;
     background: white;
     display: block;
@@ -139,7 +139,19 @@ header {
 
 .login-box #username-alert,
 .login-box #password-alert {
+    position: absolute;
     color: red;
+    font-size: 12px;
+}
+
+.login-box #username-alert {
+    left: 110px;
+    top: 112px;
+}
+
+.login-box #password-alert {
+    left: 110px;
+    top: 185px;
 }
 
 .ocultar {
@@ -150,11 +162,11 @@ header {
     font-family: 'Lato';
 }
 
-input[type="text"]:focus~.id-floating-label {
-    top: 60px;
+#username:focus~.id-floating-label {
+    top: 115px;
     bottom: 10px;
-    left: 100px;
-    font-size: 11px;
+    left: 110px;
+    font-size: 10px;
     opacity: 1;
     color: black;
 }
@@ -162,17 +174,17 @@ input[type="text"]:focus~.id-floating-label {
 .id-floating-label {
     position: absolute;
     pointer-events: none;
-    left: 125px;
-    top: 90px;
+    left: 115px;
+    top: 145px;
     transition: 0.2s ease all;
     color: gray;
 }
 
-input[type="password"]:focus~.pw-floating-label {
-    top: 125px;
+#password:focus~.pw-floating-label {
+    top: 190px;
     bottom: 10px;
-    left: 100px;
-    font-size: 11px;
+    left: 110px;
+    font-size: 10px;
     opacity: 1;
     color: black;
 }
@@ -180,8 +192,20 @@ input[type="password"]:focus~.pw-floating-label {
 .pw-floating-label {
     position: absolute;
     pointer-events: none;
-    left: 170px;
-    top: 155px;
+    left: 115px;
+    top: 220px;
     transition: 0.2s ease all;
     color: gray;
+}
+
+#show_password {
+    position: absolute;
+    top: 52%;
+    left: 71%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.forgot {
+    font-size: 12px;
 }
