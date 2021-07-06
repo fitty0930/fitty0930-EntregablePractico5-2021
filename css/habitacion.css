@@ -1,6 +1,6 @@
-.icons_favs i{
+.icons_favs i, p {
     float: right;
-    font-size: 180%;
+    font-size: 150%;
     margin-left: 2%;
 }
 .img_central_carousel{

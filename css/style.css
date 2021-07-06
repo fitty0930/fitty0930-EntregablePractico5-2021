@@ -206,6 +206,10 @@ header {
 .arrowsCarousel{
     font-size: 30px;
 }
+.cta i{
+    font-size: 180%;
+    color: white;
+}
 /* FOOTER  */
 footer{
     background-color: #F26D34;
