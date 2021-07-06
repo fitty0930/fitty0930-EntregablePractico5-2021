@@ -8,16 +8,17 @@ body {
     margin: 0;
     font-family: 'Lato';
     background-color: #f5f5f5;
-    
 }
 
-a {
+header li,
+header a,
+header .navbar-button {
     font-size: 14px;
     text-decoration: none !important;
 }
 
 header li,
-a {
+header a {
     color: #ffffff;
 }
 
@@ -41,8 +42,12 @@ header {
 }
 
 .nav__links li {
+    padding-left: 20px;
     display: inline-block;
-    padding: 0px 20px;
+}
+
+.nav__links li:last-child {
+    padding-right: 20px;
 }
 
 .nav__links li a {
@@ -50,8 +55,9 @@ header {
 }
 
 .nav__links li a:hover {
-    color: #F76426;
-    background-color: #ffffff;
+    /* tbc */
+    /* color: #F76426;
+    background-color: #ffffff; */
 }
 
 .navbar-button {
@@ -67,25 +73,29 @@ header {
 
 .navbar-button:hover {
     /* TO DO */
-    border: 1px solid #ffffff;
+    /* border: 1px solid #ffffff;
     color: #ffffff;
-    background-color: #F76426;
+    background-color: #F76426; */
 }
 
-.search{
+.search {
     height: 85vh;
     background-image: url("../img/unknown.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
-.search .col-md-6{
+
+.search .col-md-6 {
     margin-left: auto;
     margin-right: auto;
 }
-.div_input_search, .div_btn_publicar{
+
+.div_input_search,
+.div_btn_publicar {
     margin-top: 5%;
 }
-.div_btn_publicar button{
+
+.div_btn_publicar button {
     /* Publica tu habitación */
     height: 40px;
     font-family: Lato;
@@ -95,26 +105,30 @@ header {
     line-height: 17px;
     display: flex;
     align-items: center;
-    text-align: center; 
+    text-align: center;
     border: 2px solid #F76426;
     margin-top: 2%;
-
     color: #F76426;
 }
 
-.div_btn_publicar button:hover{
+.div_btn_publicar button:hover {
     color: white;
     background-color: #F76426;
 }
-.div_title{
+
+.div_title {
     margin-top: 20%;
 }
-.div_input_search button{
+
+.div_input_search button {
     background-color: #F76426;
     color: white;
 }
+
+
 /* CONTENIDO */
-.img_ilustracion{
+
+.img_ilustracion {
     width: 60%;
     height: 90vh;
     margin-left: 20%;
@@ -122,108 +136,132 @@ header {
     margin-bottom: 3%;
 }
 
-.div_opiniones{
+.div_opiniones {
     border: 1px solid black;
     margin-bottom: 3%;
 }
-.div_opiniones p{
+
+.div_opiniones p {
     text-align: center;
     margin-top: 0.5%;
 }
-.title_intermedio{
+
+.title_intermedio {
     text-align: center;
     margin-top: 1%;
 }
-.cards_simple{
+
+.cards_simple {
     margin-left: 8%;
 }
-.cards_simple .card{
+
+.cards_simple .card {
     width: 75%;
 }
-.cards_simple img{
+
+.cards_simple img {
     height: 200px;
 }
-.cards_dobles{
+
+.cards_dobles {
     margin-left: 13%;
     padding-top: 5%;
 }
-.cards_dobles .card{
+
+.cards_dobles .card {
     width: 80%;
 }
 
-.card_Completa{
+.card_Completa {
     margin-left: 20%;
     padding-top: 5%;
     margin-bottom: 5%;
     /* height: 70%; */
     width: 60%;
 }
-.card_Completa .card{
+
+.card_Completa .card {
     width: 60%;
 }
-.div_likes{
+
+.div_likes {
     align-content: flex-start;
 }
-.div_likes img{
-    width: 20px;
 
+.div_likes img {
+    width: 20px;
 }
-.img_person_card{
+
+.img_person_card {
     width: 10%;
     height: 10%;
 }
-.div_imgCard_doble img{
+
+.div_imgCard_doble img {
     display: inline-block;
     width: 48%;
     margin-left: 1%;
 }
-.div_imgCard_completa img{
+
+.div_imgCard_completa img {
     display: inline-block;
     width: 19.5%;
     margin-left: 0.05%;
 }
-.card-body a{
+
+.card-body a {
     float: right;
 }
-.card_horizontal_container{
+
+.card_horizontal_container {
     display: inline-flex;
 }
 
-.card_horizontal{
-    height: 200px ;
+.card_horizontal {
+    height: 200px;
     width: 60%;
 }
-.card_horizontal_container img{
+
+.card_horizontal_container img {
     height: 56%;
     width: 50%;
 }
-.btn_redondo{
+
+.btn_redondo {
     border-radius: 20px !important;
 }
-.div_valoracion{
+
+.div_valoracion {
     float: right;
 }
-.arrowsCarousel{
+
+.arrowsCarousel {
     font-size: 30px;
 }
-.cta i{
+
+.cta i {
     font-size: 180%;
     color: white;
 }
+
+
 /* FOOTER  */
-footer{
+
+footer {
     background-color: #F26D34;
     width: 100%;
 }
-.footer__links{
+
+.footer__links {
     list-style: none;
 }
-.footer__links div{
+
+.footer__links div {
     border-bottom: 1px solid white;
     padding-top: 1%;
 }
 
-.footer__links div p{
+.footer__links div p {
     margin-left: 38%;
     color: white;
 }
@@ -234,11 +272,13 @@ footer{
     margin-left: 10%;
     margin-top: 1%;
 }
-.links_redesSociales{
+
+.links_redesSociales {
     list-style: none;
     margin-left: 60%;
 }
-footer p{
+
+footer p {
     margin-left: 40%;
     color: white;
     padding-bottom: 1%;

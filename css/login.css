@@ -1,0 +1,131 @@
+/* LOGIN */
+
+.login-box {
+    width: 500px;
+    padding: 30px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#username,
+#password {
+    border: 0;
+    background: white;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 14px 10px;
+    width: 300px;
+    outline: none;
+    color: black;
+    border-radius: 10px;
+    transition: 0.25px;
+}
+
+.login-box .btn-ingresar {
+    border: 0;
+    background: #F76426;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid white;
+    padding: 14px 20px;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    transition: 0.25px;
+    cursor: pointer;
+    box-shadow: 0 2px rgb(70, 69, 69);
+}
+
+.login-box .btn-ingresar:hover {
+    background-color: #ff4d00
+}
+
+.login-box .btn-ingresar:active {
+    background-color: rgb(190, 90, 43);
+    box-shadow: 0 2px rgb(70, 69, 69);
+    transform: translateY(4px);
+}
+
+.login-box #username-alert,
+.login-box #password-alert {
+    position: absolute;
+    color: red;
+    font-size: 12px;
+}
+
+.login-box #username-alert {
+    left: 110px;
+    top: 112px;
+}
+
+.login-box #password-alert {
+    left: 110px;
+    top: 185px;
+}
+
+.ocultar {
+    display: none;
+}
+
+::placeholder {
+    font-family: 'Lato';
+}
+
+#username:focus~.id-floating-label {
+    top: 115px;
+    bottom: 10px;
+    left: 110px;
+    font-size: 10px;
+    opacity: 1;
+    color: black;
+}
+
+.id-floating-label {
+    position: absolute;
+    pointer-events: none;
+    left: 115px;
+    top: 145px;
+    transition: 0.2s ease all;
+    color: gray;
+}
+
+#password:focus~.pw-floating-label {
+    top: 190px;
+    bottom: 10px;
+    left: 110px;
+    font-size: 10px;
+    opacity: 1;
+    color: black;
+}
+
+.pw-floating-label {
+    position: absolute;
+    pointer-events: none;
+    left: 115px;
+    top: 220px;
+    transition: 0.2s ease all;
+    color: gray;
+}
+
+#show_password {
+    position: absolute;
+    top: 52%;
+    left: 71%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.forgot {
+    font-size: 12px;
+    text-decoration: none;
+    border-bottom: 1px solid #0d6efd;
+    padding-bottom: 0.5%;
+}
