@@ -57,6 +57,25 @@
 .div_comentarios{
     margin-left: 16%;
 }
+.div_comentarios span{
+    margin-right: 3%;;
+}
+.div_estrellas_promedio{
+    display: inline-block;
+    margin-left: 7.5%;
+    margin-bottom: 0.5%;
+}
+.div_estrellas_promedio img{
+    width: 3.5%;
+    height: 3.5%;
+}
+.div_estrellas{
+    display: inline-block;
+}
+.div_estrellas img{
+    width: 2%;
+    height: 2%;
+}
 .div_habitaciones_similares{
    margin-left: 18%;
    margin-bottom: 7%;
