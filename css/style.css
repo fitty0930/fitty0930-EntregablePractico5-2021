@@ -44,6 +44,8 @@ header {
 .nav__links li {
     padding-left: 20px;
     display: inline-block;
+    padding-top: 18px;
+    /* para ajustarlo */
 }
 
 .nav__links li:last-child {
