@@ -1,0 +1,11 @@
+.nav__links li {
+    padding-left: 20px;
+    display: inline-block;
+    padding-top: 3px;
+    /* para ajustarlo */
+}
+
+.nav__links .nav-icon-bell,
+.nav__links .nav-icon-person {
+    cursor: pointer;
+}

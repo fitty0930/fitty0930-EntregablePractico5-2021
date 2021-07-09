@@ -85,7 +85,7 @@
     left: 110px;
     font-size: 10px;
     opacity: 1;
-    color: black;
+    color: #525252;
 }
 
 .id-floating-label {
@@ -103,7 +103,7 @@
     left: 110px;
     font-size: 10px;
     opacity: 1;
-    color: black;
+    color: #525252;
 }
 
 .pw-floating-label {
@@ -123,9 +123,23 @@
     padding-bottom: 7px;
 }
 
+#show_password :hover {
+    /* tbc */
+    background-color: lightblue;
+}
+
 .forgot {
     font-size: 12px;
     text-decoration: none;
-    border-bottom: 1px solid #0d6efd;
+    /* border-bottom: 1px solid #0d6efd; */
     padding-bottom: 0.5%;
+}
+
+.welcome-login {
+    color: #525252;
+}
+
+footer {
+    position: absolute;
+    top: 650px
 }

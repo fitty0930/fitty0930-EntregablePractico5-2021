@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> RoomShare </title>
-    <link rel="stylesheet" href="css/style.css">
+    <title> RoomShare Franco </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/logged-in.css">
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
 
     <!-- ESTO ES NECESARIO PARA PODER USAR NUESTRO TIPO DE LETRA -->
     <script src="https://kit.fontawesome.com/4b4084f640.js" crossorigin="anonymous"></script>
@@ -20,15 +21,15 @@
 <body>
     <!-- NAVBAR HOME -->
     <header>
-        <img class="logo" src="img/RoomShare.png" alt="logo" width="180px">
+        <a class="logo" href="index.html"><img src="img/RoomShare.png" alt="logo" width="180px"></a>
         <nav>
             <ul class="nav__links">
-                <li><a href="#">Soy locador</a></li>
-                <li><a href="#">Soy locatario</a></li>
-                <li class="mt-3"><img class="me-3" src="img/icon_campana.png" width="35px" alt="" srcset=""><img class="me-2" src="img/icon_persona.png" width="35px" alt="" srcset=""></li>
+                <li><a class="hvr-underline-from-center-navbar" href="#">Soy locador</a></li>
+                <li><a class="hvr-underline-from-center-navbar" href="#">Soy locatario</a></li>
+                <li class="mt-3"><img class="me-3 nav-icon-bell" src="img/icon_campana.png" width="35px" alt="" srcset=""><img class="me-2 nav-icon-person" src="img/icon_persona.png" width="35px" alt="" srcset=""></li>
             </ul>
         </nav>
-        <a class="cta" href=""><button class="navbar-button me-1">Franco</button> <i class="fas fa-sort-down"></i></a>
+        <a class="cta" href=""><button class="navbar-button hvr-radial-out-navbar">Franco</button></a>
     </header>
     <!-- RELLENO -->
     <div class="container-fluid">
@@ -37,18 +38,18 @@
                 <!-- <img class="imageSearch" src="img/unknown.png"/> -->
                 <center>
                     <div class="div_title">
-                        <h1>Encontra Gratis</h1>
-                        <h4>Encontra en la mejor web de alquiler</h4>
+                        <h1 class="custom-negro">Encontrá Gratis</h1>
+                        <h4 class="custom-negro">Encontrá en la mejor web de alquiler</h4>
                     </div>
                     <div class="input-group mb-3 div_input_search">
-                        <input type="text" class="form-control" placeholder="Busque Aqui" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <input type="text" class="form-control" placeholder="¿En dónde te gustaria vivir?" aria-label="Recipient's username" aria-describedby="basic-addon2">
                         <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button">Buscar</button>
+                            <button class="btn btn-outline-secondary hvr-radial-out-search" type="button">Buscar</button>
                         </div>
                     </div>
                     <div class="div_btn_publicar">
-                        <h4>Estas buscando un inquilino?</h4>
-                        <button class="btn btn_publicar" type="button">Publica tu habitacion</button>
+                        <h4 class="custom-negro">¿Estás buscando un inquilino?</h4>
+                        <button class="btn btn_publicar hvr-radial-out-publish" type="button">Publica tu habitacion</button>
                     </div>
                 </center>
             </div>
@@ -60,17 +61,17 @@
         </div>
         <div class="row">
             <div class="col-md-12 div_opiniones">
-                <p>Opiniones</p>
+                <h3 class="custom-negro">Opiniones</h3>
             </div>
             <div class="col-md-3 cards_simple">
                 <div class="card">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title custom-negro">Card title</h5>
                     <img class="card-img-top img_person_card" src="img/person.png" alt="Card image cap">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text custom-negro">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <div class="div_likes">
-                            <p>
-                                ¿Te resulto util? <i class="far fa-thumbs-up"></i><span> </span><i class="far fa-thumbs-down"></i>
+                            <p class="custom-negro">
+                                ¿Te resultó util?<i class="far fa-thumbs-up"></i><span> </span><i class="far fa-thumbs-down"></i>
                             </p>
                         </div>
                     </div>
@@ -78,13 +79,13 @@
             </div>
             <div class="col-md-3 cards_simple">
                 <div class="card">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title custom-negro">Card title</h5>
                     <img class="card-img-top img_person_card" src="img/person.png" alt="Card image cap">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text custom-negro">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <div class="div_likes">
-                            <p>
-                                ¿Te resulto util? <i class="far fa-thumbs-up"></i><span> </span><i class="far fa-thumbs-down"></i>
+                            <p class="custom-negro">
+                                ¿Te resultó util? <i class="far fa-thumbs-up"></i><span> </span><i class="far fa-thumbs-down"></i>
                             </p>
                         </div>
                     </div>
@@ -92,13 +93,13 @@
             </div>
             <div class="col-md-3 cards_simple">
                 <div class="card">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title custom-negro">Card title</h5>
                     <img class="card-img-top img_person_card" src="img/person.png" alt="Card image cap">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text custom-negro">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <div class="div_likes">
-                            <p>
-                                ¿Te resulto util? <i class="far fa-thumbs-up"></i><span> </span><i class="far fa-thumbs-down"></i>
+                            <p class="custom-negro">
+                                ¿Te resultó util? <i class="far fa-thumbs-up"></i><span> </span><i class="far fa-thumbs-down"></i>
                             </p>
                         </div>
                     </div>
@@ -107,60 +108,64 @@
         </div>
         <div class="row">
             <div class="col-md-12 mt-5">
-                <h2 class="title_intermedio">Ya no necesitas soñar, nos tenés a nosotros</h2>
-                <h4 class="title_intermedio">por eso te preparamos estos packs especiales</h4>
+                <h2 class="title_intermedio custom-negro">Ya no necesitas soñar, nos tenés a nosotros</h2>
+                <h4 class="title_intermedio custom-negro">por eso te preparamos estos packs especiales</h4>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4 cards_dobles">
                 <div class="card">
-                    <h5 class="card-title">Card title</h5>
+                    <!-- <h5 class="card-title">Card title</h5> -->
                     <div class="div_imgCard_doble">
                         <img class="card-img-top" src="img/person.png" alt="Card image cap">
                         <img class="card-img-top" src="img/person.png" alt="Card image cap">
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary btn_redondo">Ver mas</a>
+                        <h5 class="card-title custom-negro">Card title</h5>
+                        <p class="card-text custom-negro">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn_redondo hvr-radial-out">Ver mas</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 cards_dobles">
                 <div class="card">
-                    <h5 class="card-title">Card title</h5>
+                    <!-- <h5 class="card-title">Card title</h5> -->
                     <div class="div_imgCard_doble">
                         <img class="card-img-top" src="img/person.png" alt="Card image cap">
                         <img class="card-img-top" src="img/person.png" alt="Card image cap">
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary btn_redondo">Ver mas</a>
+                        <h5 class="card-title custom-negro">Card title</h5>
+                        <p class="card-text custom-negro">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn_redondo hvr-radial-out">Ver mas</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-12 card_Completa">
-                <div class="card">
-                    <!-- <h5 class="card-title">Card title</h5> -->
-                    <div class="div_imgCard_completa">
-                        <img class="card-img-top" src="img/person.png" alt="Card image cap">
-                        <img class="card-img-top" src="img/person.png" alt="Card image cap">
-                        <img class="card-img-top" src="img/person.png" alt="Card image cap">
-                        <img class="card-img-top" src="img/person.png" alt="Card image cap">
-                        <img class="card-img-top" src="img/person.png" alt="Card image cap">
+                <center>
+                    <div class="card">
+                        <!-- <h5 class="card-title">Card title</h5> -->
+                        <div class="div_imgCard_completa">
+                            <img class="card-img-top" src="img/person.png" alt="Card image cap">
+                            <img class="card-img-top" src="img/person.png" alt="Card image cap">
+                            <img class="card-img-top" src="img/person.png" alt="Card image cap">
+                            <img class="card-img-top" src="img/person.png" alt="Card image cap">
+                            <img class="card-img-top" src="img/person.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title custom-negro">Card title</h5>
+                            <p class="card-text custom-negro">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn_redondo hvr-radial-out">Ver mas</a>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary btn_redondo">Ver mas</a>
-                    </div>
-                </div>
+                </center>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <h3 class="title_intermedio mb-5">Habitaciones destacadas en la Zona / Ciudad</h3>
+                <center>
+                    <h3 class="title_intermedio mb-5 custom-negro">Habitaciones destacadas basadas en tus últimas busquedas</h3>
+                </center>
             </div>
         </div>
         <div class="row">
@@ -177,8 +182,8 @@
                                     <i class="far fa-star text-warning"></i>
                                     <i class="far fa-star text-warning"></i>
                                     <i class="far fa-star text-warning"></i>
-                                    <i class="far fa-star"></i>
-                                    <a href="#" type="button" class="btn btn-primary btn_redondo">Ver mas</a>
+                                    <i class="far fa-star last-star"></i>
+                                    <a href="#" type="button" class="btn btn_redondo hvr-radial-out">Ver mas</a>
                                 </div>
                             </div>
                         </div>
@@ -198,8 +203,8 @@
                                     <i class="far fa-star text-warning"></i>
                                     <i class="far fa-star text-warning"></i>
                                     <i class="far fa-star text-warning"></i>
-                                    <i class="far fa-star"></i>
-                                    <a href="#" type="button" class="btn btn-primary btn_redondo">Ver mas</a>
+                                    <i class="far fa-star last-star"></i>
+                                    <a href="#" type="button" class="btn btn_redondo hvr-radial-out">Ver mas</a>
                                 </div>
                             </div>
                         </div>
@@ -210,7 +215,9 @@
                 <center>
                     <div class="card card_horizontal">
                         <div class="card_horizontal_container">
+
                             <img class="card-img-top" src="img/person.png" alt="Card image cap">
+
                             <div class="card-body">
                                 <h5 class="card-title">Card title <i class="far fa-heart"></i></h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -219,8 +226,8 @@
                                     <i class="far fa-star text-warning"></i>
                                     <i class="far fa-star text-warning"></i>
                                     <i class="far fa-star text-warning"></i>
-                                    <i class="far fa-star"></i>
-                                    <a href="#" type="button" class="btn btn-primary btn_redondo">Ver mas</a>
+                                    <i class="far fa-star last-star"></i>
+                                    <a href="#" type="button" class="btn btn_redondo hvr-radial-out">Ver mas</a>
                                 </div>
                             </div>
                         </div>
@@ -229,7 +236,7 @@
             </div>
             <div class="col-md-12">
                 <center>
-                    <button class="btn btn-primary mb-5 btn_redondo">Ver todas</button>
+                    <button class="btn mb-5 btn_redondo hvr-radial-out">Ver todas</button>
                 </center>
             </div>
         </div>
@@ -239,14 +246,14 @@
             <div>
                 <p>Mas de 30.000 personas confian en nosotros</p>
             </div>
-            <li><a href="#">¿Quienes somos?</a></li>
-            <li><a href="#">¿Necesitas ayuda?</a></li>
-            <li><a href="#">Terminos y condiciones</a></li>
-            <li><a href="#">Politicas de privacidad</a></li>
+            <li><a class="hvr-underline-from-center-navbar" href="#">¿Quienes somos?</a></li>
+            <li><a class="hvr-underline-from-center-navbar" href="#">¿Necesitas ayuda?</a></li>
+            <li><a class="hvr-underline-from-center-navbar" href="#">Terminos y condiciones</a></li>
+            <li><a class="hvr-underline-from-center-navbar" href="#">Politicas de privacidad</a></li>
         </ul>
         <ul class="links_redesSociales">
             <li>
-                <a></a>Siguenos en</a>
+                <a class="follow-us">Siguenos en</a>
             </li>
             <li>
                 <a href="#"><img src="" alt=""></a>
