@@ -108,12 +108,14 @@ header {
     text-align: center;
     border: 2px solid #F76426;
     margin-top: 2%;
-    color: #F76426;
+    color: white;
+    background-color: #F76426;
+
 }
 
 .div_btn_publicar button:hover {
-    color: white;
-    background-color: #F76426;
+    font-size: 20px;
+    height: 42px;
 }
 
 .div_title {
@@ -161,6 +163,7 @@ header {
 
 .cards_simple img {
     height: 200px;
+    width: 100%;
 }
 
 .cards_dobles {
@@ -181,7 +184,7 @@ header {
 }
 
 .card_Completa .card {
-    width: 60%;
+    width: 95%;
 }
 
 .div_likes {
@@ -205,7 +208,7 @@ header {
 
 .div_imgCard_completa img {
     display: inline-block;
-    width: 19.5%;
+    width: 19.65%;
     margin-left: 0.05%;
 }
 
@@ -242,6 +245,23 @@ header {
 .cta i {
     font-size: 180%;
     color: white;
+}
+.text_premium_card p{
+    float: right;
+    border-top: 3px solid lightblue;
+    border-bottom: 3px solid lightblue;
+    transform: rotate(35deg);
+    width: 20%;
+    height: 10%;
+    margin-top: 1.5%;
+    /* margin-left: 12%; */
+    color: lightblue;
+
+}
+.text_premium_card{
+    margin-left: 27%;
+    /* border-top: 3px solid lightblue;
+    border-bottom: 3px solid lightblue; */
 }
 
 
