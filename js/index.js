@@ -13,4 +13,8 @@ document.addEventListener("DOMContentLoaded", function() {
         campanita.classList.add("far")
     })
 
+    let btnbuscar = document.getElementById("btn-buscar");
+    btnbuscar.addEventListener("click", function() {
+        window.location.href = 'resultspage.html'; // LO REDIRIJO A DONDE SE LOGUEO
+    })
 });
