@@ -236,8 +236,6 @@ header {
 
 /* HOVER AL SEARCH */
 
-.div_input_search button:hover {}
-
 .hvr-radial-out-search {
     display: inline-block;
     vertical-align: middle;
@@ -369,7 +367,7 @@ header {
 
 .div_imgCard_completa img {
     display: inline-block;
-    width: 19.5%;
+    width: 19%;
     margin-left: 0.05%;
 }
 
@@ -579,4 +577,13 @@ footer p {
 
 .card-text {
     text-align: left;
+}
+
+.fa_custom {
+    color: #ffc107 !important;
+}
+
+#corazon-fav {
+    cursor: pointer;
+    padding-left: 5px;
 }
