@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const OCULTAR = "ocultar"
 
 
+
     let username = document.getElementById("username");
     let password = document.getElementById("password");
     let btnlogin = document.getElementById("login");
@@ -96,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             idlabel.style.display = "none";
             pwlabel.style.display = "none";
+            window.location.href = 'homeLogueado.html'; // LO REDIRIJO A DONDE SE LOGUEO
         }
     }
 
