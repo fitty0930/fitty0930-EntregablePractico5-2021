@@ -484,6 +484,8 @@ header {
     /* border-top: 3px solid lightblue;
     border-bottom: 3px solid lightblue; */
 }
+.card_horizontal_container img {     height: 200px;     width: 50%; }
+
 
 
 /* FOOTER  */
@@ -497,10 +499,14 @@ footer {
     list-style: none;
 }
 
-.footer__links div {
-    border-bottom: 1px solid white;
+footer div{
     padding-top: 1%;
+    border-bottom: 1px solid white;
 }
+.footer__links div {
+    width: 100%;
+}
+
 
 .footer__links div p {
     margin-left: 38%;
