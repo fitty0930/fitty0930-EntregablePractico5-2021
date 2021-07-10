@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+.ocultar{
+    display: none;
+}
+
 body {
     margin: 0;
     font-family: 'Lato';
@@ -75,12 +79,12 @@ header {
     transition: all 0.3s ease 0s;
 }
 
-.navbar-button:hover {
+/* .navbar-button:hover {
     /* TO DO */
     /* border: 1px solid #ffffff;
     color: #ffffff;
-    background-color: #F76426; */
-}
+    background-color: #F76426; 
+} */
 
 
 /* HOVER AL NAVBAR BUTTON */
@@ -323,6 +327,7 @@ header {
 
 .cards_simple img {
     height: 200px;
+    width: 100%;
 }
 
 .cards_dobles {
@@ -343,7 +348,7 @@ header {
 }
 
 .card_Completa .card {
-    width: 60%;
+    width: 95%;
 }
 
 .div_likes {
@@ -461,6 +466,23 @@ header {
 .cta i {
     font-size: 180%;
     color: white;
+}
+.text_premium_card p{
+    float: right;
+    border-top: 3px solid lightblue;
+    border-bottom: 3px solid lightblue;
+    transform: rotate(35deg);
+    width: 20%;
+    height: 10%;
+    margin-top: 1.5%;
+    /* margin-left: 12%; */
+    color: lightblue;
+
+}
+.text_premium_card{
+    margin-left: 27%;
+    /* border-top: 3px solid lightblue;
+    border-bottom: 3px solid lightblue; */
 }
 
 
