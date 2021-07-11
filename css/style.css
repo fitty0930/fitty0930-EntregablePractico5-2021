@@ -320,6 +320,7 @@ header {
 
 .cards_simple .card {
     width: 75%;
+    background-color: #F0DCD4;
 }
 
 .cards_simple img {
@@ -334,6 +335,7 @@ header {
 
 .cards_dobles .card {
     width: 80%;
+    background-color: #F0DCD4;
 }
 
 .card_Completa {
@@ -346,6 +348,7 @@ header {
 
 .card_Completa .card {
     width: 95%;
+    background-color: #F0DCD4;
 }
 
 .div_likes {
@@ -384,6 +387,7 @@ header {
 .card_horizontal {
     height: 202px;
     width: 60%;
+    background-color: #F0DCD4;
 }
 
 .card_horizontal_container img {

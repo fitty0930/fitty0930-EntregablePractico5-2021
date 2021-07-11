@@ -255,3 +255,12 @@
 #btnAddList {
     cursor: pointer;
 }
+
+#primera-img-carrousel {
+    padding-left: 2%;
+}
+
+.fa-arrow-left,
+.fa-arrow-right {
+    cursor: pointer;
+}
