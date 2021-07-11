@@ -3,7 +3,8 @@
     margin: 0;
     padding: 0;
 }
-.page{
+
+.page {
     opacity: 0;
 }
 
@@ -381,7 +382,7 @@ header {
 }
 
 .card_horizontal {
-    height: 200px;
+    height: 202px;
     width: 60%;
 }
 
