@@ -628,8 +628,8 @@ footer p {
     transition: all ease 1250ms;
     opacity: 1;
     transform: perspective(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(10px) translateZ(0px);
-    width: 38%;
-    height: 90%;
+    /* width: 38%; */
+    /* height: 90%; */
     margin-left: 1%;
     margin-right: 1%;
     border-radius: 2%;
