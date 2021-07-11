@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log("ee")
 
             for (let card of cards) {
-                card.classList.toggle("fadeInUp");
+                card.classList.toggle("showPermanente");
             }
             counter = 0;
         }else{

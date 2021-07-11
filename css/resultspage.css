@@ -75,11 +75,17 @@
     border-radius: 5px;
     color: white !important;
 }
+.cargando h4 {
+  margin-left: 20%;
+  margin-top: 5%;
+}
 .circular{
     height:100px;
     width: 100px;
     position: relative;  
-    border:solid green 1px;
+    margin-left: 30%;
+    margin-top: 10%;
+    /* border:solid green 1px; */
 }
 .circular .inner{
     position: absolute;
@@ -89,7 +95,9 @@
     height: 80px;
     width: 80px;
     margin: -40px 0 0 -40px;
-    background: red;
+    /* background: red;    */
+     background: rgb(255, 255, 255);
+
     border-radius: 100%;
   }
   .circular .number{
@@ -100,7 +108,7 @@
     z-index:10;
     font-size:18px;
     font-weight:500;
-    color:#4158d0;
+    color:#F76426;
   }
   .circular .bar{
     position: absolute;
@@ -116,7 +124,7 @@
     width: 100%;
     -webkit-border-radius: 100%;
     clip: rect(0px, 50px, 100px, 0px);
-    background: #4158d0;
+    background: #F76426;
   }
   .circle .left .progress{
     z-index:1;
@@ -141,3 +149,6 @@
       transform: rotate(180deg);
     }
   }
+.card_horizontal{
+  opacity: 0;
+}
