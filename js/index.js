@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     preloder.classList.toggle("ocultar");
                     document.querySelector(".center").classList.toggle("ocultar");
                     page.classList.toggle("ocultar");
-                    page.classList.toggle("show");
+                    page.classList.toggle("showPermanente");
                 }, 1000);
 
                 clearInterval(interval);

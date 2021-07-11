@@ -17,5 +17,5 @@ document.addEventListener("DOMContentLoaded", function() {
             counter+=1;
             numb.textContent = counter + "%";
         }
-    }, 74);
+    }, 49);
 });

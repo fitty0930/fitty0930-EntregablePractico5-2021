@@ -128,7 +128,7 @@
   }
   .circle .left .progress{
     z-index:1;
-    animation: left 4s linear both;
+    animation: left 2.5s linear both;
   }
   @keyframes left{
     100%{
@@ -141,8 +141,8 @@
    
   }
   .circle .right .progress{
-    animation: right 4s linear both;
-    animation-delay:4s;
+    animation: right 2.5s linear both;
+    animation-delay:2.5s;
   }
   @keyframes right{
     100%{

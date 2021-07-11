@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+.page{
+    opacity: 0;
+}
 
 .ocultar {
     display: none;
