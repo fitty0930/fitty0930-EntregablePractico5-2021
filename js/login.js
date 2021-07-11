@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const OCULTAR = "ocultar"
 
 
-
+    let ojito = document.getElementById("show_password");
     let username = document.getElementById("username");
     let password = document.getElementById("password");
     let btnlogin = document.getElementById("login");
@@ -19,12 +19,28 @@ document.addEventListener("DOMContentLoaded", function() {
     let idlabel = document.getElementById("idlabel");
     let pwlabel = document.getElementById("pwlabel");
 
+    ojito.addEventListener("mouseover", function() {
+        ojito.classList.add("text-primary")
+    })
+
+    ojito.addEventListener("mouseout", function() {
+        ojito.classList.remove("text-primary")
+    })
+
 
     btnlogin.addEventListener("click", validate);
 
     username.addEventListener('mousedown', () => {
         if (username.value == "") {
             idlabel.classList.remove(OCULTAR)
+        }
+    })
+
+    username.addEventListener('mouseover', () => {
+        if (username.value == "") {
+            idlabel.classList.remove(OCULTAR)
+        } else {
+            idlabel.classList.add(OCULTAR)
         }
     })
 
@@ -43,6 +59,14 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 
     password.addEventListener('mouseout', () => {
+        if (password.value == "") {
+            pwlabel.classList.remove(OCULTAR)
+        } else {
+            pwlabel.classList.add(OCULTAR)
+        }
+    })
+
+    password.addEventListener('mouseover', () => {
         if (password.value == "") {
             pwlabel.classList.remove(OCULTAR)
         } else {
