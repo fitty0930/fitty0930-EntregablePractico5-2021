@@ -32,21 +32,15 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 250);
     }
 
-    document.querySelector(".buttonCampana").addEventListener("click", function() {
-        document.querySelector(".items_notificaciones").classList.toggle("ocultar");
-        document.querySelector(".items_perfil").classList.add("ocultar");
-
-    });
-    document.querySelector(".navbar-button").addEventListener("click", function() {
-        document.querySelector(".items_perfil").classList.toggle("ocultar");
-        document.querySelector(".items_notificaciones").classList.add("ocultar");
-
-    });
-    // let campanita = document.getElementById("campanita");
-
 
     let btnbuscar = document.getElementById("btn-buscar");
     btnbuscar.addEventListener("click", function() {
         window.location.href = 'resultspage.html'; // LO REDIRIJO A DONDE SE LOGUEO
     })
+
+
+
+
+
+
 });
