@@ -392,10 +392,10 @@ header {
 }
 
 .btn_redondo {
-    background-color: #9B72DC;
-    border: #9B72DC;
-    border-radius: 5px;
-    color: white;
+    background-color: #9B72DC !important;
+    border: #9B72DC !important;
+    border-radius: 5px !important;
+    color: white !important;
 }
 
 
@@ -519,7 +519,7 @@ footer {
 .footer__links li {
     display: inline-block;
     padding: 0px 20px;
-    margin-left: 10%;
+    margin-left: 7%;
     margin-top: 1%;
 }
 

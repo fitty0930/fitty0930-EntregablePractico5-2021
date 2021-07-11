@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
     const numb = document.querySelector(".number");
-    let cards= document.querySelectorAll(".card_horizontal");
+    let cards = document.querySelectorAll(".card_horizontal");
     let counter = 0;
-    let interval= setInterval(() => {
-        if(counter == 100 ){
+    let interval = setInterval(() => {
+        if (counter == 100) {
             clearInterval(interval);
             document.querySelector(".cargando").classList.toggle("ocultar");
             document.querySelector(".resultados").classList.toggle("ocultar");
@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 card.classList.toggle("showPermanente");
             }
             counter = 0;
-        }else{
-            counter+=1;
+        } else {
+            counter += 1;
             numb.textContent = counter + "%";
         }
     }, 49);

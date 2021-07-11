@@ -134,7 +134,7 @@
 }
 
 .room-title {
-    padding-left: 21%;
+    padding-left: 15%;
 }
 
 .div_caracteristicas_lateral p,
@@ -245,4 +245,13 @@
 .hvr-radial-out-alquilar:active:before {
     -webkit-transform: scale(2);
     transform: scale(2);
+}
+
+#flechaIzq,
+#flechaDer {
+    cursor: pointer;
+}
+
+#btnAddList {
+    cursor: pointer;
 }

@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/resultspage.css">
     <link rel="stylesheet" href="css/logged-in.css">
+    <link rel="stylesheet" href="css/animacion.css">
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <script src="js/resultsPage.js"></script>
     <!-- ESTO ES NECESARIO PARA PODER USAR NUESTRO TIPO DE LETRA -->
     <script src="https://kit.fontawesome.com/4b4084f640.js" crossorigin="anonymous"></script>
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
@@ -93,7 +94,22 @@
 
             </div>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-9 cargando">
+            <h4>Un momento por favor</h4>
+            <div class="circular">
+                <div class="inner"></div>
+                <div class="number">100%</div>
+                <div class="circle">
+                    <div class="bar left">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="bar right">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9 ocultar resultados">
             <center>
                 <div class="card card_horizontal hoverCardHoriz">
                     <div class="card_horizontal_container">
