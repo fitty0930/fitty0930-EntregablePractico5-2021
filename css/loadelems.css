@@ -1,0 +1,21 @@
+.module {}
+
+.come-in {
+    transform: translateX(500px);
+    animation: come-in 2s ease forwards;
+}
+
+.come-in:nth-child(odd) {
+    -webkit-animation-duration: 10.0s;
+}
+
+.already-visible {
+    transform: translateX(0);
+    animation: none;
+}
+
+@-webkit-keyframes come-in {
+    to {
+        -webkit-transform: translateX(0);
+    }
+}

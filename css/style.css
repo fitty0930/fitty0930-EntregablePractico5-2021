@@ -634,13 +634,13 @@ footer p {
 }
 
 .hoverCardHoriz:hover {
-    transition: all ease 1250ms;
-    opacity: 1;
-    transform: perspective(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(10px) translateZ(0px);
+    transition: all ease 1250ms !important;
+    opacity: 1 !important;
+    transform: perspective(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(10px) translateZ(0px) !important;
     /* width: 38%; */
     /* height: 90%; */
-    margin-left: 1%;
-    margin-right: 1%;
-    border-radius: 2%;
-    box-shadow: 0 0 20px rgb(102, 101, 105);
+    margin-left: 1% !important;
+    margin-right: 1% !important;
+    border-radius: 2% !important;
+    box-shadow: 0 0 20px rgb(102, 101, 105) !important;
 }
