@@ -4,21 +4,33 @@
     padding: 0;
 }
 
+.page {
+    opacity: 0;
+}
+
+.ocultar {
+    display: none;
+}
+
 body {
     margin: 0;
     font-family: 'Lato';
     background-color: #f5f5f5;
 }
 
-header li,
-a,
-.navbar-button {
-    font-size: 14px;
-    text-decoration: none;
+button {
+    border-radius: 5px !important;
 }
 
 header li,
-a {
+header a,
+header .navbar-button {
+    font-size: 14px;
+    text-decoration: none !important;
+}
+
+header li,
+header a {
     color: #ffffff;
 }
 
@@ -27,7 +39,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 30px 2%;
-    width: 100vw;
+    width: 100%;
     height: 100px;
     background-color: #F76426;
 }
@@ -42,8 +54,14 @@ header {
 }
 
 .nav__links li {
+    padding-left: 20px;
     display: inline-block;
-    padding: 0px 20px;
+    padding-top: 18px;
+    /* para ajustarlo */
+}
+
+.nav__links li:last-child {
+    padding-right: 20px;
 }
 
 .nav__links li a {
@@ -51,24 +69,578 @@ header {
 }
 
 .nav__links li a:hover {
-    color: #F76426;
-    background-color: #ffffff;
+    color: white;
 }
 
 .navbar-button {
     width: 153px;
-    padding: 9px 25px;
+    padding: 9px 0px;
     color: #F76426;
     background-color: #ffffff;
     border: none;
-    border-radius: 77px;
+    border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 
-.navbar-button:hover {
-    /* TO DO */
-    border: 1px solid #ffffff;
-    color: #ffffff;
+
+/* HOVER AL NAVBAR BUTTON */
+
+.hvr-radial-out-navbar {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.hvr-radial-out-navbar:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #F0DCD4;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-radial-out-navbar:hover,
+.hvr-radial-out-navbar:focus,
+.hvr-radial-out-navbar:active {
+    color: #953E1A;
+}
+
+.hvr-radial-out-navbar:hover:before,
+.hvr-radial-out-navbar:focus:before,
+.hvr-radial-out-navbar:active:before {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+}
+
+
+/* FIN HOVER AL NAVBAR BUTTON */
+
+.search {
+    height: 85vh;
+    background-image: url("../img/unknown.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.search .col-md-6 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div_input_search,
+.div_btn_publicar {
+    margin-top: 5%;
+}
+
+.div_btn_publicar button {
+    /* Publica tu habitación */
+    height: 40px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #72569E;
+    margin-top: 2%;
+    color: white;
+    background-color: #72569E;
+}
+
+
+/* HOVER RADIAL DE PUBLICAR*/
+
+.hvr-radial-out-publish {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    background: #72569E;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.hvr-radial-out-publish:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #AD93D7;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-radial-out-publish:hover,
+.hvr-radial-out-publish:focus,
+.hvr-radial-out-publish:active {
+    color: #1c0346;
+}
+
+.hvr-radial-out-publish:hover:before,
+.hvr-radial-out-publish:focus:before,
+.hvr-radial-out-publish:active:before {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+}
+
+
+/* FIN HOVER RADIAL PUBLICAR */
+
+.div_title {
+    margin-top: 20%;
+}
+
+.div_input_search button {
     background-color: #F76426;
+    color: white;
+}
+
+
+/* HOVER AL SEARCH */
+
+.hvr-radial-out-search {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    background: #F76426;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.hvr-radial-out-search:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #953E1A;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-radial-out-search:hover,
+.hvr-radial-out-search:focus,
+.hvr-radial-out-search:active {
+    color: white;
+}
+
+.hvr-radial-out-search:hover:before,
+.hvr-radial-out-search:focus:before,
+.hvr-radial-out-search:active:before {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+}
+
+
+/* FIN HOVER AL SEARCH */
+
+
+/* CONTENIDO */
+
+.img_ilustracion {
+    width: 60%;
+    height: 90vh;
+    margin-left: 20%;
+    margin-top: 2.5%;
+    margin-bottom: 3%;
+}
+
+.div_opiniones {
+    border: 1px solid black;
+    margin-bottom: 3%;
+}
+
+.div_opiniones h3 {
+    text-align: center;
+    margin-top: 0.5%;
+}
+
+.title_intermedio {
+    text-align: center;
+    margin-top: 1%;
+}
+
+.cards_simple {
+    margin-left: 8%;
+}
+
+.cards_simple .card {
+    width: 75%;
+    background-color: #F0DCD4;
+}
+
+.cards_simple img {
+    height: 200px;
+    width: 100%;
+}
+
+.cards_dobles {
+    margin-left: 13%;
+    padding-top: 5%;
+}
+
+.cards_dobles .card {
+    width: 80%;
+    background-color: #F0DCD4;
+}
+
+.card_Completa {
+    margin-left: 20%;
+    padding-top: 5%;
+    margin-bottom: 5%;
+    /* height: 70%; */
+    width: 60%;
+}
+
+.card_Completa .card {
+    width: 95%;
+    background-color: #F0DCD4;
+}
+
+.div_likes {
+    align-content: flex-start;
+}
+
+.div_likes img {
+    width: 20px;
+}
+
+.img_person_card {
+    width: 100%;
+    height: 10%;
+}
+
+.div_imgCard_doble img {
+    display: inline-block;
+    width: 48%;
+    margin-left: 1%;
+}
+
+.div_imgCard_completa img {
+    display: inline-block;
+    width: 19%;
+    margin-left: 0.05%;
+}
+
+.card-body a {
+    float: right;
+}
+
+.card_horizontal_container {
+    display: inline-flex;
+}
+
+.card_horizontal {
+    height: 202px;
+    width: 60%;
+    background-color: #F0DCD4;
+}
+
+.card_horizontal_container img {
+    height: 198px;
+    width: 50%;
+}
+
+.btn_redondo {
+    background-color: #9B72DC !important;
+    border: #9B72DC !important;
+    border-radius: 5px !important;
+    color: white !important;
+}
+
+
+/* INICIA HOVER BOTONES REDONDOS */
+
+.hvr-radial-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    background: #9B72DC;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.hvr-radial-out:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #72569E;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-radial-out:hover,
+.hvr-radial-out:focus,
+.hvr-radial-out:active {
+    color: white;
+}
+
+.hvr-radial-out:hover:before,
+.hvr-radial-out:focus:before,
+.hvr-radial-out:active:before {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+}
+
+
+/* FIN HOVER BOTONES REDONDOS */
+
+.div_valoracion {
+    float: right;
+}
+
+.arrowsCarousel {
+    font-size: 30px;
+}
+
+.cta i {
+    font-size: 180%;
+    color: white;
+}
+
+.text_premium_card p {
+    float: right;
+    border-top: 3px solid lightblue;
+    border-bottom: 3px solid lightblue;
+    transform: rotate(35deg);
+    width: 20%;
+    height: 10%;
+    margin-top: 1.5%;
+    /* margin-left: 12%; */
+    color: lightblue;
+}
+
+.text_premium_card {
+    margin-left: 27%;
+    /* border-top: 3px solid lightblue;
+    border-bottom: 3px solid lightblue; */
+}
+
+.card_horizontal_container img {
+    height: 200px;
+    width: 50%;
+}
+
+
+/* FOOTER  */
+
+footer {
+    background-color: #F26D34;
+    width: 100%;
+}
+
+.footer__links {
+    list-style: none;
+}
+
+.footer__links div {
+    border-bottom: 1px solid white;
+    padding-left: 0px;
+    padding-top: 1%;
+    border-bottom: 1px solid white;
+}
+
+.footer__links div {
+    width: 100%;
+}
+
+.footer__links div p {
+    margin-left: 38%;
+    color: white;
+}
+
+.footer__links li {
+    display: inline-block;
+    padding: 0px 20px;
+    margin-left: 7%;
+    margin-top: 1%;
+}
+
+.footer__links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__links li a:hover {
+    color: white;
+}
+
+.links_redesSociales .follow-us {
+    text-decoration: none;
+    color: white;
+}
+
+.links_redesSociales {
+    list-style: none;
+    margin-left: 60%;
+}
+
+footer p {
+    margin-left: 40%;
+    color: white;
+    padding-bottom: 1%;
+}
+
+
+/* INICIO HOVER SUBRAYADO */
+
+.hvr-underline-from-center-navbar {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-underline-from-center-navbar:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: white;
+    height: 1.5px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-center-navbar:hover:before,
+.hvr-underline-from-center-navbar:focus:before,
+.hvr-underline-from-center-navbar:active:before {
+    left: 0;
+    right: 0;
+}
+
+
+/* FIN HOVER SUBRAYADO */
+
+.last-star {
+    padding-top: 10px;
+    padding-right: 15px;
+}
+
+.custom-negro {
+    color: #525252;
+}
+
+.custom-orange {
+    color: #F76426;
+}
+
+.fa-thumbs-up {
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-text {
+    text-align: left;
+}
+
+.fa_custom {
+    color: #ffc107 !important;
+}
+
+.corazon-fav,
+#corazon-fav {
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+.fa-thumbs-up,
+.fa-thumbs-down {
+    cursor: pointer;
+}
+
+.hoverCardHoriz:hover {
+    transition: all ease 1250ms !important;
+    opacity: 1 !important;
+    transform: perspective(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(10px) translateZ(0px) !important;
+    /* width: 38%; */
+    /* height: 90%; */
+    margin-left: 1% !important;
+    margin-right: 1% !important;
+    border-radius: 2% !important;
+    box-shadow: 0 0 20px rgb(102, 101, 105) !important;
 }

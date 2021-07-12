@@ -1,0 +1,26 @@
+.nav__links li {
+    padding-top: 6px;
+    padding-left: 20px;
+    display: inline-block;
+    /* para ajustarlo */
+}
+
+.nav__links .nav-icon-bell,
+.nav__links .nav-icon-person {
+    cursor: pointer;
+}
+
+.campanita {
+    color: white;
+    font-size: 25px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.items_perfil li {
+    cursor: pointer;
+}
+
+.items_perfil li a:hover {
+    color: white;
+}

@@ -1,0 +1,37 @@
+.ocultar {
+    display: none;
+}
+
+.items_notificaciones {
+    position: fixed;
+    list-style: none;
+    width: 20%;
+    margin-left: 8%;
+    z-index: 100;
+}
+
+.items_notificaciones li {
+    background-color: white;
+    border: 3px solid #F76426;
+    border-bottom: 1.8px solid #F76426;
+    border-top: 1px solid #F76426;
+}
+
+.items_notificaciones li div p,
+i {
+    color: #525252;
+}
+
+.items_notificaciones li div {
+    display: inline-flex;
+}
+
+.items_notificaciones li div i {
+    display: inline-flex;
+    font-size: 150%;
+}
+
+.campanita {
+    color: white;
+    font-size: 170%;
+}
