@@ -387,7 +387,7 @@ header {
 .card_horizontal {
     height: 202px;
     width: 60%;
-    background-color: #F0DCD4;
+    background-color: #F0DCD4 !important;
 }
 
 .card_horizontal_container img {
