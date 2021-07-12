@@ -1,6 +1,11 @@
 .show {
     animation: fadein 0.5s;
 }
+.showPermanente{
+	animation: fadein 3s;
+	animation-fill-mode: forwards;
+
+}
 
 .fadein {
     opacity: 0;

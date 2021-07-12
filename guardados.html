@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Publicaciones guardadas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/logged-in.css">
+    <link rel="stylesheet" href="css/animacion.css">
+    <link rel="stylesheet" href="css/clickEnMiPerfil.css">
+    <link rel="stylesheet" href="css/clickEnNotificaciones.css">
+    <link rel="stylesheet" href="css/guardados.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <!-- ESTO ES NECESARIO PARA PODER USAR NUESTRO TIPO DE LETRA -->
+    <script src="https://kit.fontawesome.com/4b4084f640.js" crossorigin="anonymous"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <!-- NAVBAR HOME -->
+    <header>
+        <a class="logo" href="index.html"><img src="img/RoomShare.png" alt="logo" width="180px"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a class="hvr-underline-from-center-navbar mb-2" href="#">Soy locador</a></li>
+                <li><a class="hvr-underline-from-center-navbar mb-2" href="#">Soy locatario</a></li>
+                <li class="mt-3"><i id="campanita" type="button" class="far fa-bell campanita buttonCampana text-ligth"></i></li>
+            </ul>
+            <ul class="items_notificaciones ocultar">
+                <li>
+                    <center>
+                        <h6 class=" mt-2 custom-negro">Notificaciones</h6>
+                    </center>
+                </li>
+                <li>
+                    <div>
+                        <i class="fas fa-envelope mt-3 me-3 ms-3"></i>
+                        <a href="">
+                            <p class="mt-2 custom-negro">Estas habitaciones pueden interesarte!</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <i class="fas fa-users mt-3 me-3 ms-3"></i>
+                        <a href="opinion.html">
+                            <p class="mt-2 custom-negro">Alquilaste en Buenos Aires contanos tu experiencia</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <i class="fas fa-user-circle mt-3 me-3 ms-3"></i>
+                        <a href="">
+                            <p class="me-1 mt-2 custom-negro">¡Especial para vos habitacion en San luis con 30% de descuento</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <a class="cta"><button class="navbar-button hvr-radial-out-navbar">Franco</button></a>
+        <ul class="items_perfil ocultar">
+            <li style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                <p class="mt-2 ms-4 hvr-underline-from-center-navbar">Mi Perfil</p>
+            </li>
+            <li>
+                <p class="mt-2 ms-4 hvr-underline-from-center-navbar">Mis Alquileres</p>
+            </li>
+            <li>
+                <p class="mt-2 ms-4 hvr-underline-from-center-navbar">Mis Reservas</p>
+            </li>
+            <li>
+                <p class="mt-2 ms-4 hvr-underline-from-center-navbar"><a href="guardados.html">Favoritos</a></p>
+            </li>
+            <li>
+                <p class="mt-2 ms-4 hvr-underline-from-center-navbar">Ayuda</p>
+            </li>
+            <li style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+                <p class="mt-2 ms-4 hvr-underline-from-center-navbar">Salir</p>
+            </li>
+        </ul>
+    </header>
+    <div class="row">
+        <center>
+            <div class="col-md-8">
+                <center>
+                    <br>
+                    <br>
+                    <br>
+                    <h2 class="titulo-guardado"> Estas son tus publicaciones guardadas </h2>
+                </center>
+            </div>
+        </center>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <br>
+            <center>
+                <div class="botones-guardados">
+                    <li><button class="btn btn_favoritos_list hvr-radial-out-fav"> Favoritos </button></li>
+                    <li><button class="btn btn_redondo hvr-radial-out"> Lista 1 </button></li>
+                    <li><button class="btn btn_redondo hvr-radial-out"> Lista 2 </button></li>
+                    <li><button class="btn btn_redondo hvr-radial-out"> Lista 3 </button></li>
+                    <li><button class="btn btn_redondo hvr-radial-out"> Lista 4 </button></li>
+                </div>
+                <br>
+                <br>
+                <center>
+                    <div class="card card_horizontal hoverCardHoriz">
+                        <div class="card_horizontal_container">
+                            <img class="card-img-top" src="img/horizontal1.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title custom-negro">Card title <i id="corazon1" class="fas fa-heart text-danger corazon-fav"></i></h5>
+                                <p class="card-text custom-negro">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <div class="mt-4 div_valoracion">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning last-star"></i>
+                                    <a href="#" type="button" class="btn btn_redondo hvr-radial-out">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card card_horizontal hoverCardHoriz">
+                        <div class="card_horizontal_container">
+                            <img class="card-img-top" src="img/horizontal2.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title custom-negro">Card title <i id="corazon2" class="fas fa-heart text-danger corazon-fav"></i></h5>
+                                <p class="card-text custom-negro">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <div class="mt-4 div_valoracion">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning last-star"></i>
+                                    <a href="#" type="button" class="btn btn_redondo hvr-radial-out">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card card_horizontal hoverCardHoriz">
+                        <div class="card_horizontal_container">
+                            <img class="card-img-top" src="img/horizontal3.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title custom-negro">Card title <i id="corazon3" class="fas fa-heart text-danger corazon-fav"></i></h5>
+                                <p class="card-text custom-negro">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <div class="mt-4 div_valoracion">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning last-star"></i>
+                                    <a href="#" type="button" class="btn btn_redondo hvr-radial-out">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card card_horizontal hoverCardHoriz">
+                        <div class="card_horizontal_container">
+                            <img class="card-img-top" src="img/horizontal1.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title custom-negro">Card title <i id="corazon4" class="fas fa-heart text-danger corazon-fav"></i></h5>
+                                <p class="card-text custom-negro">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <div class="mt-4 div_valoracion">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning last-star"></i>
+                                    <a href="#" type="button" class="btn btn_redondo hvr-radial-out">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card card_horizontal hoverCardHoriz">
+                        <div class="card_horizontal_container">
+                            <img class="card-img-top" src="img/horizontal2.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title custom-negro">Card title <i id="corazon5" class="fas fa-heart text-danger corazon-fav"></i></h5>
+                                <p class="card-text custom-negro">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <div class="mt-4 div_valoracion">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning last-star"></i>
+                                    <a href="#" type="button" class="btn btn_redondo hvr-radial-out">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </center>
+            </center>
+            <br>
+            <br>
+            <br>
+        </div>
+
+    </div>
+    <!--  -->
+    <!--  -->
+    <!-- FOOTER -->
+    <footer>
+        <div>
+            <br>
+            <p>Mas de 30.000 personas confian en nosotros</p>
+        </div>
+        <ul class="footer__links">
+            <li><a class="hvr-underline-from-center-navbar" href="#">¿Quienes somos?</a></li>
+            <li><a class="hvr-underline-from-center-navbar" href="#">¿Necesitas ayuda?</a></li>
+            <li><a class="hvr-underline-from-center-navbar" href="#">Terminos y condiciones</a></li>
+            <li><a class="hvr-underline-from-center-navbar" href="#">Politicas de privacidad</a></li>
+        </ul>
+        <ul class="links_redesSociales">
+            <li>
+                <a class="follow-us">Siguenos en</a>
+            </li>
+            <li>
+                <a href="#"><img src="" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="" alt=""></a>
+            </li>
+        </ul>
+        <p> © RoomShare, localidad, pais, codigo postal</p>
+    </footer>
+
+    <script src="js/indexlogged.js"></script>
+</body>
+
+</html>

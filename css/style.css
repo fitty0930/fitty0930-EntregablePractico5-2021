@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+.page {
+    opacity: 0;
+}
+
 .ocultar {
     display: none;
 }
@@ -316,6 +320,7 @@ header {
 
 .cards_simple .card {
     width: 75%;
+    background-color: #F0DCD4;
 }
 
 .cards_simple img {
@@ -330,6 +335,7 @@ header {
 
 .cards_dobles .card {
     width: 80%;
+    background-color: #F0DCD4;
 }
 
 .card_Completa {
@@ -342,6 +348,7 @@ header {
 
 .card_Completa .card {
     width: 95%;
+    background-color: #F0DCD4;
 }
 
 .div_likes {
@@ -378,8 +385,9 @@ header {
 }
 
 .card_horizontal {
-    height: 200px;
+    height: 202px;
     width: 60%;
+    background-color: #F0DCD4;
 }
 
 .card_horizontal_container img {
@@ -388,10 +396,10 @@ header {
 }
 
 .btn_redondo {
-    background-color: #9B72DC;
-    border: #9B72DC;
-    border-radius: 5px;
-    color: white;
+    background-color: #9B72DC !important;
+    border: #9B72DC !important;
+    border-radius: 5px !important;
+    color: white !important;
 }
 
 
@@ -479,6 +487,11 @@ header {
     border-bottom: 3px solid lightblue; */
 }
 
+.card_horizontal_container img {
+    height: 200px;
+    width: 50%;
+}
+
 
 /* FOOTER  */
 
@@ -495,6 +508,11 @@ footer {
     border-bottom: 1px solid white;
     padding-left: 0px;
     padding-top: 1%;
+    border-bottom: 1px solid white;
+}
+
+.footer__links div {
+    width: 100%;
 }
 
 .footer__links div p {
@@ -505,7 +523,7 @@ footer {
 .footer__links li {
     display: inline-block;
     padding: 0px 20px;
-    margin-left: 10%;
+    margin-left: 7%;
     margin-top: 1%;
 }
 
@@ -583,6 +601,10 @@ footer p {
     color: #525252;
 }
 
+.custom-orange {
+    color: #F76426;
+}
+
 .fa-thumbs-up {
     padding-left: 15px;
     padding-right: 5px;
@@ -609,4 +631,16 @@ footer p {
 .fa-thumbs-up,
 .fa-thumbs-down {
     cursor: pointer;
+}
+
+.hoverCardHoriz:hover {
+    transition: all ease 1250ms !important;
+    opacity: 1 !important;
+    transform: perspective(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(10px) translateZ(0px) !important;
+    /* width: 38%; */
+    /* height: 90%; */
+    margin-left: 1% !important;
+    margin-right: 1% !important;
+    border-radius: 2% !important;
+    box-shadow: 0 0 20px rgb(102, 101, 105) !important;
 }

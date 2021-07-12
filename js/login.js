@@ -36,6 +36,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     })
 
+    username.onkeyup = function() {
+        if (username.value == "") {
+            idlabel.classList.remove(OCULTAR)
+        } else {
+            idlabel.classList.add(OCULTAR)
+        }
+    }
+
     username.addEventListener('mouseover', () => {
         if (username.value == "") {
             idlabel.classList.remove(OCULTAR)
@@ -73,6 +81,14 @@ document.addEventListener("DOMContentLoaded", function() {
             pwlabel.classList.add(OCULTAR)
         }
     })
+
+    password.onkeyup = function() {
+        if (password.value == "") {
+            pwlabel.classList.remove(OCULTAR)
+        } else {
+            pwlabel.classList.add(OCULTAR)
+        }
+    }
 
     function validate(event) {
         event.preventDefault();

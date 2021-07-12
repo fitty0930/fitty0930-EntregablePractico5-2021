@@ -14,15 +14,17 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 
     let btnbuscar = document.getElementById("btn-buscar");
-    btnbuscar.addEventListener("click", function() {
-        window.location.href = 'resultspagelogeado.html'; // LO REDIRIJO A DONDE SE LOGUEO
-    })
+    if (btnbuscar) {
+        btnbuscar.addEventListener("click", function() {
+            window.location.href = 'resultspagelogeado.html'; // LO REDIRIJO A DONDE SE LOGUEO
+        })
+    }
 
     // VA AL INDEX LOGGUED IN
     document.querySelector(".buttonCampana").addEventListener("click", function() {
         document.querySelector(".items_notificaciones").classList.toggle("ocultar");
         document.querySelector(".items_perfil").classList.add("ocultar");
-
+        console.log("ee")
     });
     document.querySelector(".navbar-button").addEventListener("click", function() {
         document.querySelector(".items_perfil").classList.toggle("ocultar");
