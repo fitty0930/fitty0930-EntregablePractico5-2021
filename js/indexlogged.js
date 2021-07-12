@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 
     let btnbuscar = document.getElementById("btn-buscar");
-    if(btnbuscar){
+    if (btnbuscar) {
         btnbuscar.addEventListener("click", function() {
             window.location.href = 'resultspagelogeado.html'; // LO REDIRIJO A DONDE SE LOGUEO
         })

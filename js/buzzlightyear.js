@@ -48,4 +48,23 @@ document.addEventListener("DOMContentLoaded", function() {
     flechaIzq.addEventListener("mouseout", function() {
         flechaIzq.classList.remove("text-primary");
     })
+
+    let carrIzq = document.getElementById("carrIzq");
+    carrIzq.addEventListener("mouseover", function() {
+        carrIzq.classList.add("text-primary");
+    })
+
+    carrIzq.addEventListener("mouseout", function() {
+        carrIzq.classList.remove("text-primary");
+    })
+
+    let carrDer = document.getElementById("carrDer");
+    carrDer.addEventListener("mouseover", function() {
+        carrDer.classList.add("text-primary");
+    })
+
+    carrDer.addEventListener("mouseout", function() {
+        carrDer.classList.remove("text-primary");
+    })
+
 });

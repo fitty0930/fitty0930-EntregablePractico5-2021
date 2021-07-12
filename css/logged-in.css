@@ -1,5 +1,5 @@
 .nav__links li {
-    padding-top: 20px;
+    padding-top: 6px;
     padding-left: 20px;
     display: inline-block;
     /* para ajustarlo */
@@ -15,4 +15,12 @@
     font-size: 25px;
     padding-right: 20px;
     cursor: pointer;
+}
+
+.items_perfil li {
+    cursor: pointer;
+}
+
+.items_perfil li a:hover {
+    color: white;
 }
